@@ -1,11 +1,11 @@
 * {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
 #map {
 	width: 100%;
 	height: 100vh;
-	border: 2px solid black;
+	border: 2px dashed #faae27;
 }
 button {
 	margin: 15px auto;
@@ -14,11 +14,18 @@ button {
 	background-color: #faae27;
 	border: 0;
 	font-weight: 700;
-	border-radius: 2px;
+	border-radius: 5px;
 	font-family: "Raleway";
 	font-size: 15px;
-	display: block;
+	display: inline;
 }
 button:hover,button:focus {
 	outline: 0;
+}
+.mapa {
+	width: 100%;
+	height: auto;
+}
+.datos {
+	margin-top: 100px;
 }

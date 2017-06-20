@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Easy bike</title>
+	<title>Easy VReco</title>
 	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Font -->
@@ -10,19 +10,39 @@
 	<!-- CDN Bootstrap -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 <section>
+<div class="container">
 	<div class="row">
-		<div class="col-md-12 col-sm-12">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-left datos">
 			<button id="encuentrame">Encuéntrame</button>
+			<form class="form">
+  				<div class="form-group">
+    				<label for="origen">Origen</label>
+    				<input type="text" class="form-control" id="email">
+  				</div>
+  				<div class="form-group">
+    				<label for="destino">Destino</label>
+    				<input type="text" class="form-control" id="pwd">
+  				</div>
+  					<button type="submit" id="ruta">Ruta</button>
+			</form>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+		<div>
+			<div class="row">
+				<div class="mapa">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="map">
+					</div>
+					<!-- Aqui ira nuestro mapa-->
+				</div>
+			</div>
+		</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-12 col-sm-12" id="map">
-			<!-- Aqui ira nuestro mapa-->
-		</div>
-	</div>
+</div>
 </section>
 <!-- JAVASCRIPT es preferible como ultima linea en el body -->
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAelOrxwqDDKvXCEsZr9bqGjjzsp7aI_-4&callback=initMap&libraries=places"></script>
