@@ -13,12 +13,17 @@
 
 }
 @media only screen and (min-width: 1px) and (max-width: 480px) {
+	#principal {
+	background-position: left top;
+	color: white;
+	text-shadow: purple;
+	}
 	#map {
 	border: 2px solid purple;
-}
+	}
 button {
 	background-color: purple;
-}
+	}
 	.datos {
 	margin-top: 5px;
 	}

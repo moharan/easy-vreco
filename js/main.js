@@ -22,6 +22,7 @@ function initMap() {
 			position: {lat:latitud, lng:longitud},
 			animation: google.maps.Animation.DROP,
 			map: map,
+			icon: "img/icono.png"
 		});
 		map.setZoom(17);
 		map.setCenter({lat:latitud, lng:longitud});
